@@ -1,3 +1,5 @@
+package javaProgramowaniedrugikwiecien;
+
 import java.util.Scanner;
 
 public class Zad8 {

@@ -1,3 +1,5 @@
+package javaProgramowaniedrugikwiecien;
+
 public class Zad8RozwiazanieTrenera {
     public static void main(String[] args) {
         int rangeFrom = 0;
