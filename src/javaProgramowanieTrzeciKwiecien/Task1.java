@@ -14,8 +14,9 @@ public class Task1 {
 
     }
     private static char getLastChar(String input) {
-        if (input != null && !input.isBlank()) {
-            int lastPosition = input.length() - 1;
+        //if (input != null && !input.isBlank()) {
+        if (StringHelper.isValid(input)) {
+        int lastPosition = input.length() - 1;
             return input.charAt(lastPosition);
         }
 
