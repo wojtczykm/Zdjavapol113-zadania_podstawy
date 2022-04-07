@@ -2,7 +2,7 @@ package javaProgramowaniedrugikwiecien;
 
 import java.util.Scanner;
 
-public class Zad10 {
+public class Zad7Trenera {
     public static void main(String[] args) {
         String decision = null;
         String STOP_DECISION = "stop";
