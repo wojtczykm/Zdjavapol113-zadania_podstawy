@@ -1,15 +1,14 @@
 package javaProgramowanieTrzeciKwiecien;
 
+import java.util.Arrays;
+
 public class Task14 {
     public static void main(String[] args) {
+
         int[] inputs = {12, -7, 19, -5};
-int lenghtOfNewArray=isMinus(inputs);
-if(lenghtOfNewArray>0){
-
-
-}
-
-
+        int lenghtOfNewArray = isMinus(inputs);
+        int [] array = createNewArrayOfMinus(inputs,lenghtOfNewArray);
+        System.out.println(Arrays.toString(array));
     }
 
     private static int isMinus(int[] inputs) {
@@ -20,19 +19,17 @@ if(lenghtOfNewArray>0){
             }
         }
         return counter;
-
     }
 
-    private static int[] createNewArrayOfMinus(int[] inputs, int lenghtOfNewArray){
+    private static int[] createNewArrayOfMinus(int[] inputs, int lenghtOfNewArray) {
         int[] result = new int[lenghtOfNewArray];
-        for(int i=0; i< inputs.length; ){
+        int j=0;
+        for (int i = 0; i < inputs.length; i++) {
+            if(inputs[i]<0){
+                result[j]=inputs[i];
+                j++;
+            }
         }
-
-        return null;
-
-
+        return result;
     }
-
-
-
 }
